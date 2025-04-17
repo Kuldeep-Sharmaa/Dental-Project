@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dental Project</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&family=Montserrat:wght@700&family=Lato:wght@400&family=Oswald:wght@700&family=Quicksand:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/d8f48d71cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">Dental Clinic</div>
+        <nav class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#" class="btn">Book Appointment</a>
+        </nav>
+        <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <div class="mobile-nav" id="mobileNav">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#" class="btn">Book Appointment</a>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="hero-section"
+      data-aos="fade-up"
+      data-aos-once="true"
+      data-aos-duration="1000"
+    >
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+          <div
+            class="col-md-6 hero-image px-0"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <div class="shape-2">
+              <img src="images/Shape-2.png" alt="" />
+            </div>
+            <img src="images/Image.png" alt="hero image" class="img-fluid" />
+          </div>
+          <div
+            class="col-md-6 hero-text"
+            data-aos="fade-left"
+            data-aos-duration="1300"
+            data-aos-delay="200"
+          >
+            <h1
+              class="hero-heading"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              The Best Dental Clinic in the Town
+            </h1>
+            <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              assumenda aut neque sit explicabo quia, beatae debitis suscipit,
+              iure quae iusto laboriosam voluptate vitae ullam dolores
+              voluptatem facilis error deserunt.
+            </p>
+            <div class="text-center explore-button">
+              <a href="#what-we-do" class="text-decoration-none">
+                <button
+                  type="button"
+                  class="hero-button"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="800"
+                >
+                  <span class="text">Explore more Services</span>
+                  <span class="svg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50"
+                      height="20"
+                      viewBox="0 0 38 15"
+                      fill="none"
+                    >
+                      <path
+                        fill="white"
+                        d="M10 7.519l-.939-.344h0l.939.344zm14.386-1.205l-.981-.192.981.192zm1.276 5.509l.537.843.148-.094.107-.139-.792-.611zm4.819-4.304l-.385-.923h0l.385.923zm7.227.707a1 1 0 0 0 0-1.414L31.343.448a1 1 0 0 0-1.414 0 1 1 0 0 0 0 1.414l5.657 5.657-5.657 5.657a1 1 0 0 0 1.414 1.414l6.364-6.364zM1 7.519l.554.833.029-.019.094-.061.361-.23 1.277-.77c1.054-.609 2.397-1.32 3.629-1.787.617-.234 1.17-.392 1.623-.455.477-.066.707-.008.788.034.025.013.031.021.039.034a.56.56 0 0 1 .058.235c.029.327-.047.906-.39 1.842l1.878.689c.383-1.044.571-1.949.505-2.705-.072-.815-.45-1.493-1.16-1.865-.627-.329-1.358-.332-1.993-.244-.659.092-1.367.305-2.056.566-1.381.523-2.833 1.297-3.921 1.925l-1.341.808-.385.245-.104.068-.028.018c-.011.007-.011.007.543.84zm8.061-.344c-.198.54-.328 1.038-.36 1.484-.032.441.024.94.325 1.364.319.45.786.64 1.21.697.403.054.824-.001 1.21-.09.775-.179 1.694-.566 2.633-1.014l3.023-1.554c2.115-1.122 4.107-2.168 5.476-2.524.329-.086.573-.117.742-.115s.195.038.161.014c-.15-.105.085-.139-.076.685l1.963.384c.192-.98.152-2.083-.74-2.707-.405-.283-.868-.37-1.28-.376s-.849.069-1.274.179c-1.65.43-3.888 1.621-5.909 2.693l-2.948 1.517c-.92.439-1.673.743-2.221.87-.276.064-.429.065-.492.057-.043-.006.066.003.155.127.07.099.024.131.038-.063.014-.187.078-.49.243-.94l-1.878-.689zm14.343-1.053c-.361 1.844-.474 3.185-.413 4.161.059.95.294 1.72.811 2.215.567.544 1.242.546 1.664.459a2.34 2.34 0 0 0 .502-.167l.15-.076.049-.028.018-.011c.013-.008.013-.008-.524-.852l-.536-.844.019-.012c-.038.018-.064.027-.084.032-.037.008.053-.013.125.056.021.02-.151-.135-.198-.895-.046-.734.034-1.887.38-3.652l-1.963-.384zm2.257 5.701l.791.611.024-.031.08-.101.311-.377 1.093-1.213c.922-.954 2.005-1.894 2.904-2.27l-.771-1.846c-1.31.547-2.637 1.758-3.572 2.725l-1.184 1.314-.341.414-.093.117-.025.032c-.01.013-.01.013.781.624zm5.204-3.381c.989-.413 1.791-.42 2.697-.307.871.108 2.083.385 3.437.385v-2c-1.197 0-2.041-.226-3.19-.369-1.114-.139-2.297-.146-3.715.447l.771 1.846z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- What We Do Section -->
+    <section
+      id="what-we-do"
+      class="d-flex justify-content-center align-items-center flex-column"
+    >
+      <div class="container-fluid text-center">
+        <div
+          class="service-paragraph p-4 rounded-3"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <h2
+            class="heading"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-once="true"
+          >
+            What We Do
+          </h2>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+            data-aos-once="true"
+            class="text-center"
+          >
+            We offer preventive, cosmetic, and restorative dental solutions —
+            including diagnostics, whitening, and crown placements — tailored to
+            individual oral health needs.
+          </p>
+          <div class="read-more-button text-center">
+            <a
+              href="#services"
+              class="btn-read-more text-capitalize"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+              data-aos-once="true"
+            >
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="scrolldown"
+        data-aos="fade-up"
+        data-aos-duration="1200"
+        data-aos-delay="600"
+        data-aos-once="true"
+      >
+        <div class="chevrons">
+          <div class="chevrondown"></div>
+          <div class="chevrondown"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Smooth Service Section -->
+    <section id="smoooth-service">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div
+            class="col-md-6 image-container"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-once="true"
+          >
+            <h2
+              class="image-heading"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              Smooth & Easy Process
+            </h2>
+            <p
+              class="image-paragraph"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              data-aos-once="true"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              sapiente eaque placeat id ipsam fugiat quos, optio totam maiores
+              ullam facere aspernatur distinctio harum, nemo ipsa reiciendis
+              quis, repellendus suscipit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Make it Habit Section -->
+    <section id="habit">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div
+            class="col-md-6"
+            data-aos="fade-left"
+            data-aos-once="true"
+            data-aos-duration="1200"
+          ></div>
+          <div
+            class="col-md-6 image-container"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-once="true"
+          >
+            <h2
+              class="image-heading"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              Make it Habit
+            </h2>
+            <p
+              class="image-paragraph"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              data-aos-once="true"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              sapiente eaque placeat id ipsam fugiat quos, optio totam maiores
+              ullam facere aspernatur distinctio harum, nemo ipsa reiciendis
+              quis, repellendus suscipit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Awards Section -->
+    <section
+      id="awards"
+      class="p-5 mb-5"
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      data-aos-once="true"
+    >
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-start text-center">
+          <!-- Award 1 -->
+          <div
+            class="col-md-4 mb-4"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            <img
+              src="images/award-shape.png"
+              alt="Clean Clinics Award"
+              class="mb-3"
+            />
+            <h2 class="awrds-heading">Clean Clinics</h2>
+            <p class="paragraph">
+              Recognized for maintaining the highest hygiene and sterilization
+              standards in clinical practice. We are proud to be certified as
+              one of the cleanest dental environments.
+            </p>
+          </div>
+
+          <!-- Award 2 -->
+          <div
+            class="col-md-4 mb-4"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            data-aos-once="true"
+          >
+            <img
+              src="images/award-shape.png"
+              alt="Dental Clinic of the Year 2020"
+              class="mb-3"
+            />
+            <h2 class="awrds-heading">Dental Clinic of the Year 2020</h2>
+            <p class="paragraph">
+              Awarded for excellence in patient care, innovation in dental
+              technology, and outstanding clinical outcomes by leading
+              healthcare organizations.
+            </p>
+          </div>
+
+          <!-- Award 3 -->
+          <div
+            class="col-md-4 mb-4"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+            data-aos-once="true"
+          >
+            <img
+              src="images/award-shape.png"
+              alt="Dentist Award Recognition"
+              class="mb-3"
+            />
+            <h2 class="awrds-heading">Dentist Awards</h2>
+            <p class="paragraph">
+              Honored by the National Dental Association for commitment to oral
+              healthcare, patient satisfaction, and continued contribution to
+              dentistry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mission Section -->
+    <section data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Image -->
+          <div
+            class="col-md-8 px-0 d-flex align-items-center"
+            data-aos="slide-right"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            <img
+              src="images/mission.png"
+              alt="mission-png"
+              class="img-fluid mission-img"
+            />
+            <h2 class="image-heading mx-3">Mission & Vision 2025</h2>
+          </div>
+
+          <!-- Text -->
+          <div
+            class="col-md-4"
+            data-aos="fade-left"
+            data-aos-once="true"
+            data-aos-duration="1000"
+          >
+            <p class="paragraph">
+              At our dental practice, our mission is to provide exceptional oral
+              healthcare that combines clinical excellence with a patient-first
+              approach. We are committed to creating a warm, welcoming
+              environment where patients feel heard, respected, and empowered to
+              take charge of their dental health. Our focus lies in delivering
+              comprehensive care—ranging from preventive checkups and cosmetic
+              procedures to advanced restorative treatments—through the use of
+              modern technology and evidence-based techniques. As we look ahead
+              to 2025, our vision is to elevate the standard of dental care in
+              our community by embracing innovation and continuously enhancing
+              our services. We aim to be recognized not only for the quality of
+              our treatments but also for our compassionate approach and
+              commitment to long-term patient relationships. Through ongoing
+              professional development and state-of-the-art facilities, we
+              strive to make every visit seamless, comfortable, and impactful.
+              Whether you're seeking a brighter smile or improved oral wellness,
+              we are here to support you at every step. Our goal is to inspire
+              confidence, promote lasting health, and make dentistry a positive
+              experience for individuals and families alike. Together, we look
+              forward to shaping a future where every smile tells a story of
+              care, trust, and transformation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team Section -->
+    <section
+      id="team"
+      class="mt-5"
+      data-aos="fade-up"
+      data-aos-once="true"
+      data-aos-duration="1200"
+    >
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-12 mb-4">
+            <h1
+              class="heading pt-3"
+              data-aos="fade-down"
+              data-aos-once="true"
+              data-aos-duration="1000"
+            >
+              Meet Our Team
+            </h1>
+            <p
+              class="subheading"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-duration="1000"
+            >
+              Dedicated professionals committed to your smile
+            </p>
+          </div>
+
+          <!-- Team Member 1 -->
+          <div
+            class="col-md-6 mb-4"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            <img
+              src="images/doc.png"
+              alt="Dr. Edward Harris - Oral Pathologist"
+              class="img-fluid mb-3"
+            />
+            <h6
+              class="team-name"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-duration="1000"
+            >
+              Dr. Edward Harris
+            </h6>
+            <p
+              class="team-title"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-duration="1200"
+            >
+              Oral Pathologist
+            </p>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div
+            class="col-md-6 mb-4"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            <img
+              src="images/doc2.png"
+              alt="Dr. Louise Perkins - Endodontist"
+              class="img-fluid mb-3"
+            />
+            <h6
+              class="team-name"
+              data-aos-once="true"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              Dr. Louise Perkins
+            </h6>
+            <p
+              class="team-title"
+              data-aos-once="true"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              Endodontist
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience Section -->
+    <section
+      id="experience"
+      class="experience-section py-5"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
+      <div class="container">
+        <div class="row text-center">
+          <!-- Section Heading -->
+          <div class="col-12 mb-5">
+            <h2 class="experience-heading">
+              Decades Worth of <br />
+              Experience
+            </h2>
+          </div>
+
+          <!-- Stats -->
+          <div class="col-md-4 mb-4">
+            <h3 class="stat-value" id="satisfaction-rate">0%</h3>
+            <p class="stat-label">Satisfaction Rate</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h3 class="stat-value" id="patients">0+</h3>
+            <p class="stat-label">Patients</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h3 class="stat-value" id="years-in-industry">0</h3>
+            <p class="stat-label">Years in the Industry</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Smile Hero Section -->
+    <section
+      id="smile"
+      class="d-flex align-items-center justify-content-center text-center"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <h1 class="smile-heading">Your Perfect Smile<br />Within Reach.</h1>
+            <a href="#contact" class="btn btn-smile mt-4"
+              >START YOUR SMILE JOURNEY NOW</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-col about">
+          <h4>Dental Clinic</h4>
+          <p>
+            Exceptional dental care with compassion, innovation, and
+            professionalism across the USA.
+          </p>
+          <div class="footer-socials">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col links text-center">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> 1234 Smile Ave, New York, NY
+            </li>
+            <li><i class="fas fa-phone-alt"></i> +1 (800) 123-4567</li>
+            <li><i class="fas fa-envelope"></i> info@dentalclinic.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Dental Clinic. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script>
+      window.addEventListener("load", () => {
+        const navbar = document.querySelector(".navbar");
+        const hero = document.querySelector(".hero-section");
+
+        if (navbar && hero) {
+          const navbarHeight = navbar.offsetHeight;
+          hero.style.paddingTop = `${navbarHeight + 20}px`;
+        }
+      });
+    </script>
+    <script>
+      AOS.init({});
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const section = document.getElementById("experience");
+        let animated = false; // Flag to prevent repeated animations
+
+        // Observe when #experience is at least 50% visible
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                // Reset the animation for every scroll to the section
+                animated = false;
+                // Restart the animation each time
+                animateCount("satisfaction-rate", 0, 98, 1000, "%");
+                animateCount("patients", 0, 7980, 1000, "+", true);
+                animateCount("years-in-industry", 0, 30, 1000, "");
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+
+        observer.observe(section);
+
+        /**
+         * Smoothly animate a number from start → end over duration.
+         * @param {string} id         – element ID
+         * @param {number} start      – start value
+         * @param {number} end        – end value
+         * @param {number} duration   – ms duration
+         * @param {string} suffix     – text suffix (e.g. '%', '+')
+         * @param {boolean} commas    – whether to add thousands separators
+         */
+        function animateCount(
+          id,
+          start,
+          end,
+          duration,
+          suffix = "",
+          commas = false
+        ) {
+          const el = document.getElementById(id);
+          let startTime = null;
+
+          // Reset the number before starting the animation
+          el.textContent = start + suffix;
+
+          function step(timestamp) {
+            if (!startTime) startTime = timestamp;
+            const progress = timestamp - startTime;
+            const fraction = Math.min(progress / duration, 1);
+            const value = Math.floor(start + (end - start) * fraction);
+
+            let text = value.toString();
+            if (commas) {
+              text = text.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+
+            el.textContent = text + suffix;
+
+            if (fraction < 1) {
+              requestAnimationFrame(step);
+            } else {
+              // ensure the final value is exact
+              el.textContent =
+                end
+                  .toString()
+                  .replace(/\B(?=(\d{3})+(?!\d))/g, commas ? "," : "") + suffix;
+            }
+          }
+
+          requestAnimationFrame(step);
+        }
+      });
+    </script>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

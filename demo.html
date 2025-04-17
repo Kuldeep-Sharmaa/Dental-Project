@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Include AOS library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Include CountUp.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.8/countUp.min.js"></script>
+
+    <!-- Your Experience Section HTML -->
+    <section
+      id="experience"
+      class="experience-section py-5"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
+      <div class="container">
+        <div class="row text-center">
+          <!-- Section Heading -->
+          <div class="col-12 mb-5">
+            <h2 class="experience-heading">
+              Decades Worth of <br />
+              Experience
+            </h2>
+          </div>
+
+          <!-- Stats -->
+          <div class="col-md-4 mb-4">
+            <h3 class="stat-value" id="satisfaction-rate">0%</h3>
+            <p class="stat-label">Satisfaction Rate</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h3 class="stat-value" id="patients">7,980+</h3>
+            <p class="stat-label">Patients</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h3 class="stat-value" id="years-in-industry">30</h3>
+            <p class="stat-label">Years in the Industry</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript for CountUp -->
+    <script>
+      // Initialize AOS
+      AOS.init();
+
+      // When the section with the ID 'experience' comes into view
+      document.addEventListener("aos:in", function (e) {
+        if (e.detail.id === "experience") {
+          // Counter animations for the stats
+          const satisfaction = new CountUp("satisfaction-rate", 98, {
+            suffix: "%",
+            duration: 2,
+          });
+
+          const patients = new CountUp("patients", 7980, {
+            separator: ",",
+            suffix: "+",
+            duration: 2,
+          });
+
+          const years = new CountUp("years-in-industry", 30, {
+            duration: 2,
+          });
+
+          // Start the count-up animations
+          satisfaction.start();
+          patients.start();
+          years.start();
+        }
+      });
+    </script>
+  </body>
+</html>

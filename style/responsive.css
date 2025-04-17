@@ -1,0 +1,60 @@
+@media (max-width: 767px) {
+  :root {
+    /* for Mobile */
+    --heading-size: 3rem;
+    --subheading-size: 1.5rem;
+    --awards-heading-font: 2rem;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+  .hero-section {
+    padding-bottom: 3rem;
+  }
+  .shape-2 {
+    display: none;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .hero-heading {
+    font-size: var(--heading-size);
+  }
+  .image-container {
+    padding: 4rem;
+  }
+  .mission-img {
+    display: none;
+  }
+  .image-heading {
+    text-align: center;
+    font-weight: 600;
+  }
+  .explore-button {
+    display: flex;
+    justify-content: center;
+  }
+  .text {
+    font-size: 1em;
+  }
+  .hero-button {
+    padding: 7px 20px;
+  }
+}
+@media (max-width: 991px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-nav {
+    right: -100%;
+  }
+}
