@@ -3,53 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dental Project</title>
+    <meta name="robots" content="index, follow" />
+
+    <title>
+      Punjab Dental Clinic & Implant Center - Dentist in Garhdiwala, Punjab
+    </title>
+    <meta
+      name="description"
+      content="Experience expert dental care at Punjab Dental Clinic & Implant Center in Garhdiwala, Hoshiarpur. Led by Dr. Ishupreet Singh, we specialize in implants, braces, root canals, smile makeovers, and more. Your trusted destination for painless dentistry in Punjab."
+    />
+    <meta
+      name="keywords"
+      content="Dental clinic in Punjab, Garhdiwala dentist, dentist near me, Hoshiarpur, dental care, dental implants Punjab, braces Garhdiwala, teeth whitening, child dentistry, root canal treatment, smile makeover, dental appointment, best dentist in Punjab"
+    />
+
+    <link rel="canonical" href="https://punjabdentalclinc.com/" />
+
+    <!-- Open Graph (Facebook & LinkedIn) -->
+    <meta
+      property="og:title"
+      content="Punjab Dental Clinic & Implant Center | Dentist in Garhdiwala, Punjab"
+    />
+    <meta
+      property="og:description"
+      content="Book your appointment with Dr. Ishupreet Singh at Punjab Dental Clinic & Implant Center for expert, pain-free dental treatments in Garhdiwala."
+    />
+    <meta
+      property="og:image"
+      content="https://punjabdentalclinc.com/images/logo.png"
+    />
+    <meta property="og:url" content="https://punjabdentalclinc.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Punjab Dental Clinic & Implant Center - Dentist in Garhdiwala, Punjab"
+    />
+    <meta
+      name="twitter:description"
+      content="Comprehensive dental solutions at Punjab Dental Clinic & Implant Center by Dr. Ishupreet Singh. Trusted care for healthy smiles in Garhdiwala and Hoshiarpur."
+    />
+    <meta
+      name="twitter:image"
+      content="https://punjabdentalclinc.com/images/logo.png"
+    />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Punjab Dental Clinic & Implant Center",
+        "image": "https://punjabdentalclinc.com/images/assets/Dr_image.jpg",
+        "url": "https://punjabdentalclinc.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dana Mandi Road",
+          "addressLocality": "Garhdiwala",
+          "addressRegion": "Punjab",
+          "postalCode": "144207",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-7097890007",
+        "founder": "Dr. Ishupreet Singh",
+        "description": "Punjab Dental Clinic & Implant Center in Garhdiwala offers professional dental care including implants, braces, smile design, root canal therapy, and more. Book your consultation today with Dr. Ishupreet Singh.",
+        "sameAs": [
+          "https://www.facebook.com/yourclinic",
+          "https://www.instagram.com/yourclinic"
+        ]
+      }
+    </script>
+
+    <!-- Fonts and Stylesheets -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&family=Montserrat:wght@700&family=Lato:wght@400&family=Oswald:wght@700&family=Quicksand:wght@400&display=swap"
       rel="stylesheet"
     />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/responsive.css" />
+
+    <link rel="icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+
+    <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/d8f48d71cd.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS Animation CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   </head>
+
   <body>
     <header class="navbar">
-      <div class="container">
-        <div class="logo">Dental Clinic</div>
-        <nav class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="#">Services</a>
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- Logo -->
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img
+            src="images/logo.png"
+            alt="Punjab Dental Clinic Logo"
+            class="logo-img"
+          />
+          <span class="logo-text ms-2">Punjab Dental Clinic</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-links d-none d-lg-flex">
+          <a href="./services/">Services</a>
           <a href="./about/">About Us</a>
-          <a href="./contact/">Contact</a>
+          <a href="./gallery/">Gallery</a>
+          <a href="#testimonials">Testimonials</a>
           <a href="./contact/" class="btn">Book Appointment</a>
         </nav>
-        <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+
+        <!-- Hamburger Menu for Mobile -->
+        <div
+          class="hamburger d-lg-none"
+          id="hamburger"
+          onclick="toggleMobileNav()"
+        >
           <span></span><span></span><span></span>
         </div>
       </div>
 
+      <!-- Mobile Nav -->
       <div class="mobile-nav" id="mobileNav">
         <a href="index.html">Home</a>
-        <a href="#">Services</a>
+        <a href="./services/">Services</a>
         <a href="./about/">About Us</a>
-        <a href="./contact/">Contact</a>
+        <a href="./gallery/">Gallery</a>
+        <a href="./contact/">Contact Us</a>
+        <a href="#testimonials">Testimonials</a>
         <a href="./contact/" class="btn">Book Appointment</a>
       </div>
     </header>
+
     <!-- Hero Section -->
     <section
       class="hero-section"
@@ -84,11 +191,16 @@
             >
               The Best Dental Clinic in the Town
             </h1>
-            <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              assumenda aut neque sit explicabo quia, beatae debitis suscipit,
-              iure quae iusto laboriosam voluptate vitae ullam dolores
-              voluptatem facilis error deserunt.
+            <p
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-duration="1200"
+              data-aos-delay="600"
+            >
+              Experience brighter smiles with expert care at our dental clinic.
+              From routine checkups to advanced treatments, we’re committed to
+              your comfort, confidence, and complete oral health—because your
+              smile matters most.
             </p>
             <div class="text-center explore-button">
               <a href="#what-we-do" class="text-decoration-none">
@@ -100,7 +212,8 @@
                   data-aos-delay="800"
                   data-aos-once="true"
                 >
-                  <span class="text">Explore more Services</span>
+                  <span class="text">Start Your Smile Journey</span>
+
                   <span class="svg">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +268,7 @@
           </p>
           <div class="read-more-button text-center">
             <a
-              href="#services"
+              href="./about/#why-choose-us"
               class="btn-read-more text-capitalize"
               data-aos="fade-left"
               data-aos-duration="1000"
@@ -178,6 +291,103 @@
         <div class="chevrons">
           <div class="chevrondown"></div>
           <div class="chevrondown"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Team Section -->
+    <section
+      id="team"
+      class="py-5 text-center"
+      data-aos="fade-up"
+      data-aos-once="true"
+    >
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <!-- Section Title -->
+          <div class="col-12 text-center mb-5">
+            <h1 class="heading text-white" data-aos="fade-down">
+              Your Dental Expert
+            </h1>
+            <h6 class="subheading" data-aos="fade-up">
+              Meet the hands behind hundreds of confident smiles.
+            </h6>
+          </div>
+
+          <!-- Doctor Image -->
+          <div class="col-lg-5 mb-4 mb-lg-0" data-aos="zoom-in">
+            <div class="doctor-img-container">
+              <img
+                src="images/assets/Dr_image.jpg"
+                alt="Dr. Ishupreet Singh"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <!-- Doctor Info -->
+          <div class="col-lg-7 text-light" data-aos="fade-left">
+            <h2 class="fw-bold mb-2">Dr. Ishupreet Singh</h2>
+            <p class="mb-1"><strong>B.D.S. (HPU)</strong> – Reg. No. 14580-A</p>
+            <p class="mb-3">
+              AIC Certified Implantologist · Fellowship in Orthodontics &
+              Endodontics
+            </p>
+
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2">
+                <i class="bi bi-check2-circle text-success me-2"></i>
+                Ex. Dental Surgeon – Malwa Dental College, Faridkot
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check2-circle text-success me-2"></i>
+                Ex. Dental Surgeon – Talwara Hospital
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check2-circle text-success me-2"></i>
+                Ex. Dental Surgeon – AHEAD, Mohali
+              </li>
+            </ul>
+
+            <p class="mb-0">
+              With years of hands-on experience and advanced clinical training,
+              Dr. Singh is committed to delivering pain-free treatments and
+              building healthy, radiant smiles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience Section -->
+    <section
+      id="experience"
+      class="experience-section py-5"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
+      <div class="container">
+        <div class="row text-center">
+          <!-- Section Heading -->
+          <div class="col-12 mb-5">
+            <h2 class="experience-heading">
+              Decades Worth of <br />
+              Experience
+            </h2>
+          </div>
+
+          <!-- Stats -->
+          <div class="col-md-4 mb-4">
+            <h3 class="stat-value" id="satisfaction-rate">0%</h3>
+            <p class="stat-label">Satisfaction Rate</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h3 class="stat-value" id="patients">0+</h3>
+            <p class="stat-label">Patients</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h3 class="stat-value" id="years-in-industry">0</h3>
+            <p class="stat-label">Years in the Industry</p>
+          </div>
         </div>
       </div>
     </section>
@@ -206,10 +416,11 @@
               data-aos-delay="200"
               data-aos-once="true"
             >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
-              sapiente eaque placeat id ipsam fugiat quos, optio totam maiores
-              ullam facere aspernatur distinctio harum, nemo ipsa reiciendis
-              quis, repellendus suscipit.
+              From your first consultation to your final smile, our process is
+              designed to be effortless and stress-free. We simplify every step
+              with clear communication, gentle care, and the latest
+              technology—so you always feel informed, supported, and confident
+              in your treatment.
             </p>
           </div>
         </div>
@@ -246,10 +457,11 @@
               data-aos-delay="200"
               data-aos-once="true"
             >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
-              sapiente eaque placeat id ipsam fugiat quos, optio totam maiores
-              ullam facere aspernatur distinctio harum, nemo ipsa reiciendis
-              quis, repellendus suscipit.
+              Healthy smiles start with consistency. We believe dental care
+              should be a natural part of your lifestyle—not just an occasional
+              visit. That’s why we focus on education, prevention, and building
+              long-term habits that keep your teeth strong, your mouth healthy,
+              and your confidence high.
             </p>
           </div>
         </div>
@@ -329,180 +541,370 @@
         </div>
       </div>
     </section>
-    <!-- Mission Section -->
-    <section data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
-      <div class="container-fluid">
-        <div class="row">
-          <!-- Image -->
-          <div
-            class="col-md-8 px-0 d-flex align-items-center"
-            data-aos="slide-right"
-            data-aos-duration="1000"
-            data-aos-once="true"
-          >
-            <img
-              src="images/mission.png"
-              alt="mission-png"
-              class="img-fluid mission-img"
-            />
-            <h2 class="image-heading mx-3">Mission & Vision 2025</h2>
-          </div>
-
-          <!-- Text -->
-          <div
-            class="col-md-4"
-            data-aos="fade-left"
-            data-aos-once="true"
-            data-aos-duration="1000"
-          >
-            <p class="paragraph">
-              At our dental practice, our mission is to provide exceptional oral
-              healthcare that combines clinical excellence with a patient-first
-              approach. We are committed to creating a warm, welcoming
-              environment where patients feel heard, respected, and empowered to
-              take charge of their dental health. Our focus lies in delivering
-              comprehensive care—ranging from preventive checkups and cosmetic
-              procedures to advanced restorative treatments—through the use of
-              modern technology and evidence-based techniques. As we look ahead
-              to 2025, our vision is to elevate the standard of dental care in
-              our community by embracing innovation and continuously enhancing
-              our services. We aim to be recognized not only for the quality of
-              our treatments but also for our compassionate approach and
-              commitment to long-term patient relationships. Through ongoing
-              professional development and state-of-the-art facilities, we
-              strive to make every visit seamless, comfortable, and impactful.
-              Whether you're seeking a brighter smile or improved oral wellness,
-              we are here to support you at every step. Our goal is to inspire
-              confidence, promote lasting health, and make dentistry a positive
-              experience for individuals and families alike. Together, we look
-              forward to shaping a future where every smile tells a story of
-              care, trust, and transformation.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Team Section -->
+    <!-- Customer Reviews Section -->
     <section
-      id="team"
-      class="mt-5"
+      id="testimonials"
+      class="py-5"
       data-aos="fade-up"
-      data-aos-once="true"
-      data-aos-duration="1200"
-    >
-      <div class="container-fluid">
-        <div class="row text-center">
-          <div class="col-12 mb-4">
-            <h1
-              class="heading pt-3"
-              data-aos="fade-down"
-              data-aos-once="true"
-              data-aos-duration="1000"
-            >
-              Meet Our Team
-            </h1>
-            <p
-              class="subheading"
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-duration="1000"
-            >
-              Dedicated professionals committed to your smile
-            </p>
-          </div>
-
-          <!-- Team Member 1 -->
-          <div
-            class="col-md-6 mb-4"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-once="true"
-          >
-            <img
-              src="images/doc.png"
-              alt="Dr. Edward Harris - Oral Pathologist"
-              class="img-fluid mb-3"
-            />
-            <h6
-              class="team-name"
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-duration="1000"
-            >
-              Dr. Edward Harris
-            </h6>
-            <p
-              class="team-title"
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-duration="1200"
-            >
-              Oral Pathologist
-            </p>
-          </div>
-
-          <!-- Team Member 2 -->
-          <div
-            class="col-md-6 mb-4"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-once="true"
-          >
-            <img
-              src="images/doc2.png"
-              alt="Dr. Louise Perkins - Endodontist"
-              class="img-fluid mb-3"
-            />
-            <h6
-              class="team-name"
-              data-aos-once="true"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              Dr. Louise Perkins
-            </h6>
-            <p
-              class="team-title"
-              data-aos-once="true"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              Endodontist
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Experience Section -->
-    <section
-      id="experience"
-      class="experience-section py-5"
-      data-aos="fade-up"
-      data-aos-duration="1000"
       data-aos-once="true"
     >
       <div class="container">
-        <div class="row text-center">
-          <!-- Section Heading -->
-          <div class="col-12 mb-5">
-            <h2 class="experience-heading">
-              Decades Worth of <br />
-              Experience
-            </h2>
+        <div class="text-center mb-5">
+          <h2 class="experience-heading">What Our Patients Say</h2>
+          <p class="subheading text-muted">
+            Rated 4.6/5 based on 500+ reviews. Showing our latest reviews.
+          </p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper testimonial-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="profile-container">
+                  <div class="profile-icon">R</div>
+                  <img
+                    src="./images/google.png"
+                    class="google-badge"
+                    alt="Google Badge"
+                  />
+                </div>
+                <div class="reviewer-name">Rohit Verma</div>
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">
+                  Quick and efficient treatment with genuine advice. The doctor
+                  explained the procedure well and followed up after. Excellent
+                  service!
+                </p>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="profile-container">
+                  <div class="profile-icon">I</div>
+                  <img
+                    src="./images/google.png"
+                    class="google-badge"
+                    alt="Google Badge"
+                  />
+                </div>
+                <div class="reviewer-name">Ishita Gupta</div>
+
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">
+                  One of the best dentists I’ve come across. Dr. Ishupreet is
+                  experienced, polite, and truly professional. My treatment was
+                  pain-free and calm. Highly recommended!
+                </p>
+              </div>
+            </div>
+            <!-- Slide 3  -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="profile-container">
+                  <div class="profile-icon">P</div>
+                  <img
+                    src="./images/google.png"
+                    class="google-badge"
+                    alt="Google Badge"
+                  />
+                </div>
+                <div class="reviewer-name">Prabh Jot</div>
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">
+                  Dr. Ishupreet helped me with several tooth issues. He was
+                  extremely patient and professional. Highly recommend Punjab
+                  Dental Clinic, Garhdiwala.
+                </p>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="profile-container">
+                  <div class="profile-icon">J</div>
+                  <img
+                    src="./images/google.png"
+                    class="google-badge"
+                    alt="Google Badge"
+                  />
+                </div>
+                <div class="reviewer-name">Jass Kalkat</div>
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">
+                  I had a great experience here. Dr. Ishupreet and the staff
+                  were very professional and made me feel comfortable. Highly
+                  recommend this clinic for all dental issues.
+                </p>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="profile-container">
+                  <div class="profile-icon">A</div>
+                  <img
+                    src="./images/google.png"
+                    class="google-badge"
+                    alt="Google Badge"
+                  />
+                </div>
+                <div class="reviewer-name">Amanpreet Kaur</div>
+
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">
+                  Very clean and hygienic clinic. The doctor explained
+                  everything patiently and the treatment was painless. Highly
+                  satisfied with the service!
+                </p>
+              </div>
+            </div>
+            <!-- Slide 6-->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="profile-container">
+                  <div class="profile-icon">M</div>
+                  <img
+                    src="./images/google.png"
+                    class="google-badge"
+                    alt="Google Badge"
+                  />
+                </div>
+                <div class="reviewer-name">Manjot Singh</div>
+
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">
+                  The professionalism and care at this clinic is outstanding.
+                  Dr. Ishupreet and his team are truly the best in the area.
+                  Highly recommended!
+                </p>
+              </div>
+            </div>
+            <!-- Slide 7 -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="profile-container">
+                  <div class="profile-icon">S</div>
+                  <img
+                    src="./images/google.png"
+                    class="google-badge"
+                    alt="Google Badge"
+                  />
+                </div>
+                <div class="reviewer-name">Simranjeet Kaur</div>
+
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">
+                  From the first visit, I felt very comfortable and cared for.
+                  The doctor is very skilled and listens carefully. Amazing
+                  experience overall!
+                </p>
+              </div>
+            </div>
+
+            <!-- Add more swiper-slide divs for more reviews -->
           </div>
 
-          <!-- Stats -->
-          <div class="col-md-4 mb-4">
-            <h3 class="stat-value" id="satisfaction-rate">0%</h3>
-            <p class="stat-label">Satisfaction Rate</p>
+          <!-- Swiper Pagination -->
+          <div class="swiper-pagination mt-4"></div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section -->
+    <section
+      id="faq"
+      class="py-5 bg-light"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="experience-heading">FAQ</h2>
+          <p class="subheading">
+            Answers to common queries about our dental care services.
+          </p>
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseOne"
+                aria-expanded="false"
+                aria-controls="faqCollapseOne"
+              >
+                How can I book an appointment?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                You can book an appointment through our
+                <a href="./contact/">Contact Us</a> page or call us directly.
+                Online and walk-in bookings are both available.
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <h3 class="stat-value" id="patients">0+</h3>
-            <p class="stat-label">Patients</p>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseTwo"
+                aria-expanded="false"
+                aria-controls="faqCollapseTwo"
+              >
+                Are the treatments painful?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Most procedures are virtually pain-free. We use modern tools and
+                local anesthesia to ensure comfort during every visit.
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <h3 class="stat-value" id="years-in-industry">0</h3>
-            <p class="stat-label">Years in the Industry</p>
+          <!-- FAQ 3   -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseSix"
+                aria-expanded="false"
+                aria-controls="faqCollapseSix"
+              >
+                How often should I get a dental check-up?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingSix"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                We recommend a check-up every six months. However, patients with
+                gum disease, braces, or other conditions may need more frequent
+                visits.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingSeven">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseSeven"
+                aria-expanded="false"
+                aria-controls="faqCollapseSeven"
+              >
+                Do you offer emergency dental care?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseSeven"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingSeven"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, we provide emergency dental services for issues like
+                toothaches, injuries, broken fillings, and swelling. Contact us
+                immediately and we’ll do our best to accommodate you.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 5-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingNine">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseNine"
+                aria-expanded="false"
+                aria-controls="faqCollapseNine"
+              >
+                How long do dental treatments usually take?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseNine"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingNine"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Most regular treatments like cleanings or fillings take 30–60
+                minutes. More complex procedures may require multiple visits.
+                We'll always explain the timeline in advance.
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -512,59 +914,140 @@
     <section
       id="smile"
       class="d-flex align-items-center justify-content-center text-center"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-once="true"
     >
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10">
-            <h1 class="smile-heading">Your Perfect Smile<br />Within Reach.</h1>
-            <a href="#contact" class="btn btn-smile mt-4"
-              >START YOUR SMILE JOURNEY NOW</a
+            <h1
+              class="smile-heading"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-once="true"
             >
+              Your Perfect Smile<br />Within Reach.
+            </h1>
+            <a
+              href="./contact/"
+              class="btn btn-smile mt-4"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-delay="200"
+              data-aos-once="true"
+            >
+              START YOUR SMILE JOURNEY NOW
+            </a>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- WhatsApp Live Chat Button -->
+    <a
+      href="https://wa.me/917097890007?text=Hi%20there!%20I'm%20interested%20in%20dental%20services."
+      class="whatsapp-live"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Live WhatsApp Chat"
+    >
+      <div class="chat-bubble">
+        <div class="chat-status">
+          <i class="fab fa-whatsapp"></i>
+          <span class="dot"></span>
+        </div>
+        <div class="chat-msg">
+          <span class="line1">Hi there 👋</span>
+          <span class="line2 typing">Need help? Chat with us </span>
+        </div>
+      </div>
+    </a>
+    <!-- WhatsApp Mobile Button -->
+    <a
+      href="https://wa.me/917097890007?text=Hi%20there!"
+      class="whatsapp-mobile-button"
+      id="whatsappBtn"
+      rel="noopener noreferrer"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span class="whatsapp-msg" id="whatsappMsg">Need help? Chat now</span>
+    </a>
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-wrapper">
-        <div class="footer-col about">
-          <h4>Dental Clinic</h4>
-          <p>
-            Exceptional dental care with compassion, innovation, and
-            professionalism across the USA.
-          </p>
-          <div class="footer-socials">
-            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <!-- Main Footer Content -->
+      <div class="footer-main py-5">
+        <div class="container">
+          <div class="row gy-4">
+            <!-- About -->
+            <div class="col-md-4 footer-col about">
+              <h4>Punjab Dental Clinic</h4>
+              <p>
+                Exceptional dental care in Garhdiwala, Punjab, India—where
+                compassion, innovation, and professionalism meet your smile.
+              </p>
+              <div class="footer-socials mt-3">
+                <a href="#" title="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" title="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 footer-col links text-center">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./services/">Services</a></li>
+                <li><a href="./gallery/">Gallery</a></li>
+                <li><a href="./contact/">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-4 footer-col contact">
+              <h4>Contact</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-map-marker-alt me-2"></i> Dana Mandi Road,
+                  Garhdiwala, Punjab 144207
+                </li>
+                <li><i class="fas fa-phone-alt me-2"></i> +91 70978 90007</li>
+                <li>
+                  <i class="fas fa-envelope me-2"></i> info@dentalclinic.com
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-
-        <div class="footer-col links text-center">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col contact">
-          <h4>Contact</h4>
-          <ul>
-            <li>
-              <i class="fas fa-map-marker-alt"></i> 1234 Smile Ave, New York, NY
-            </li>
-            <li><i class="fas fa-phone-alt"></i> +1 (800) 123-4567</li>
-            <li><i class="fas fa-envelope"></i> info@dentalclinic.com</li>
-          </ul>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2025 Dental Clinic. All rights reserved.</p>
+      <!-- Bottom Bar -->
+      <div class="footer-bottom py-3">
+        <div class="container text-center">
+          <p class="mb-1">
+            &copy; 2025 Punjab Dental Clinic. All rights reserved.
+          </p>
+          <p class="small">
+            Developed with ❤️ by
+            <a
+              href="https://kuldeep-sharmaa.github.io/Developer-portfolio/"
+              class="text-white text-decoration-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Kuldeep Sharma</a
+            >
+          </p>
+        </div>
       </div>
     </footer>
     <!-- scripts -->
@@ -579,6 +1062,7 @@
         }
       });
     </script>
+
     <script>
       AOS.init({});
     </script>
@@ -596,8 +1080,8 @@
                 animated = false;
                 // Restart the animation each time
                 animateCount("satisfaction-rate", 0, 98, 1000, "%");
-                animateCount("patients", 0, 7980, 1000, "+", true);
-                animateCount("years-in-industry", 0, 30, 1000, "");
+                animateCount("patients", 0, 5200, 1000, "+", true);
+                animateCount("years-in-industry", 0, 10, 1000, "");
               }
             });
           },
@@ -655,6 +1139,31 @@
 
           requestAnimationFrame(step);
         }
+      });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".testimonial-swiper", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000, // 4 seconds
+          disableOnInteraction: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+        },
       });
     </script>
 

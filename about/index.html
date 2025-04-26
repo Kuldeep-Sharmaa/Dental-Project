@@ -3,18 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | SmileCare Dental Clinic</title>
+    <meta name="robots" content="index, follow" />
+
+    <title>
+      About Us | Punjab Dental Clinic & Implant Center - Garhdiwala, Punjab
+    </title>
+    <meta
+      name="description"
+      content="Learn about Punjab Dental Clinic & Implant Center in Garhdiwala. Meet Dr. Ishupreet Singh and discover our commitment to providing pain-free, high-quality dental care in Hoshiarpur, Punjab."
+    />
+    <meta
+      name="keywords"
+      content="About Punjab Dental Clinic, Dr. Ishupreet Singh, dental care Garhdiwala, trusted dentist Hoshiarpur, dental treatments Punjab, dental implants, smile design, braces, root canal expert"
+    />
+
+    <link rel="canonical" href="https://punjabdentalclinc.com/about/" />
+
+    <!-- Open Graph (Facebook & LinkedIn) -->
+    <meta
+      property="og:title"
+      content="About Punjab Dental Clinic & Implant Center | Dr. Ishupreet Singh"
+    />
+    <meta
+      property="og:description"
+      content="Meet Dr. Ishupreet Singh and learn about our journey at Punjab Dental Clinic & Implant Center, Garhdiwala — delivering trusted dental care across Hoshiarpur."
+    />
+    <meta
+      property="og:image"
+      content="https://punjabdentalclinc.com/images/logo.png"
+    />
+    <meta property="og:url" content="https://punjabdentalclinc.com/about/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="About Us - Punjab Dental Clinic & Implant Center, Garhdiwala"
+    />
+    <meta
+      name="twitter:description"
+      content="Discover our mission, vision, and meet Dr. Ishupreet Singh at Punjab Dental Clinic & Implant Center, Garhdiwala."
+    />
+    <meta
+      name="twitter:image"
+      content="https://punjabdentalclinc.com/images/logo.png"
+    />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Punjab Dental Clinic & Implant Center",
+        "image": "https://punjabdentalclinc.com/images/assets/Dr_image.jpg",
+        "url": "https://punjabdentalclinc.com/about/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dana Mandi Road",
+          "addressLocality": "Garhdiwala",
+          "addressRegion": "Punjab",
+          "postalCode": "144207",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-7097890007",
+        "founder": "Dr. Ishupreet Singh",
+        "description": "Punjab Dental Clinic & Implant Center in Garhdiwala, Punjab is led by Dr. Ishupreet Singh. We focus on delivering pain-free, modern dental care including implants, smile design, and orthodontic treatments."
+      }
+    </script>
+
+    <!-- Fonts and Stylesheets -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&family=Montserrat:wght@700&family=Lato:wght@400&family=Oswald:wght@700&family=Quicksand:wght@400&display=swap"
       rel="stylesheet"
     />
+
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
     />
+
+    <link rel="icon" href="../images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/responsive.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/d8f48d71cd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS Animation CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   </head>
+
   <body>
     <header class="navbar">
       <div class="container">
@@ -76,7 +170,7 @@
         </div>
 
         <!-- Why Choose Us -->
-        <div class="row align-items-center mt-5">
+        <div class="row align-items-center mt-5" id="why-choose-us">
           <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
             <img
               src="../images/care.jpg"
@@ -158,45 +252,77 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-wrapper">
-        <div class="footer-col about">
-          <h4>Dental Clinic</h4>
-          <p>
-            Exceptional dental care with compassion, innovation, and
-            professionalism across the USA.
-          </p>
-          <div class="footer-socials">
-            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <!-- Main Footer Content -->
+      <div class="footer-main py-5">
+        <div class="container">
+          <div class="row gy-4">
+            <!-- About -->
+            <div class="col-md-4 footer-col about">
+              <h4>Punjab Dental Clinic</h4>
+              <p>
+                Exceptional dental care in Garhdiwala, Punjab, India—where
+                compassion, innovation, and professionalism meet your smile.
+              </p>
+              <div class="footer-socials mt-3">
+                <a href="#" title="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" title="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 footer-col links text-center">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../services/">Services</a></li>
+                <li><a href="../gallery/">Gallery</a></li>
+                <li><a href="../contact/">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-4 footer-col contact">
+              <h4>Contact</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-map-marker-alt me-2"></i> Dana Mandi Road,
+                  Garhdiwala, Punjab 144207
+                </li>
+                <li><i class="fas fa-phone-alt me-2"></i> +91 70978 90007</li>
+                <li>
+                  <i class="fas fa-envelope me-2"></i> info@dentalclinic.com
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-
-        <div class="footer-col links text-center">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col contact">
-          <h4>Contact</h4>
-          <ul>
-            <li>
-              <i class="fas fa-map-marker-alt"></i> 1234 Smile Ave, New York, NY
-            </li>
-            <li><i class="fas fa-phone-alt"></i> +1 (800) 123-4567</li>
-            <li><i class="fas fa-envelope"></i> info@dentalclinic.com</li>
-          </ul>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2025 Dental Clinic. All rights reserved.</p>
+      <!-- Bottom Bar -->
+      <div class="footer-bottom py-3">
+        <div class="container text-center">
+          <p class="mb-1">
+            &copy; 2025 Punjab Dental Clinic. All rights reserved.
+          </p>
+          <p class="small">
+            Developed with ❤️ by
+            <a
+              href="https://kuldeep-sharmaa.github.io/Developer-portfolio/"
+              class="text-white text-decoration-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Kuldeep Sharma</a
+            >
+          </p>
+        </div>
       </div>
     </footer>
     <script src="../script.js"></script>
