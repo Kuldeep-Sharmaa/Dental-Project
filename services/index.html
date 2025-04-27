@@ -222,8 +222,10 @@
     <!-- Hero Section -->
     <section class="service-hero-section" data-aos="fade-down">
       <div class="container">
-        <h1>Comprehensive Dental Services</h1>
-        <p>Bringing you expert care with the latest dental technology</p>
+        <h1 class="heading">Our Dental Services</h1>
+        <p class="fs-4">
+          Bringing you expert care with the latest dental technology
+        </p>
       </div>
     </section>
 
@@ -605,18 +607,6 @@
         </div>
       </div>
     </a>
-    <!-- WhatsApp Mobile Button -->
-    <a
-      href="https://wa.me/917097890007?text=Hi%20there!"
-      class="whatsapp-mobile-button"
-      id="whatsappBtn"
-      rel="noopener noreferrer"
-      target="_blank"
-      aria-label="Chat on WhatsApp"
-    >
-      <i class="fab fa-whatsapp"></i>
-      <span class="whatsapp-msg" id="whatsappMsg">Need help? Chat now</span>
-    </a>
     <!-- Footer -->
     <footer class="footer">
       <!-- Main Footer Content -->
@@ -660,12 +650,24 @@
               <h4>Contact</h4>
               <ul>
                 <li>
-                  <i class="fas fa-map-marker-alt me-2"></i> Dana Mandi Road,
-                  Garhdiwala, Punjab 144207
+                  <i class="fas fa-map-marker-alt me-2"></i>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Dana+Mandi+Road,+Garhdiwala,+Punjab+144207"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Dana Mandi Road, Garhdiwala, Punjab 144207
+                  </a>
                 </li>
-                <li><i class="fas fa-phone-alt me-2"></i> +91 70978 90007</li>
                 <li>
-                  <i class="fas fa-envelope me-2"></i> info@dentalclinic.com
+                  <i class="fas fa-phone-alt me-2"></i>
+                  <a href="tel:+917097890007">+91 70978 90007</a>
+                </li>
+                <li>
+                  <i class="fas fa-envelope me-2"></i>
+                  <a href="mailto:info@dentalclinic.com"
+                    >info@dentalclinic.com</a
+                  >
                 </li>
               </ul>
             </div>
@@ -702,5 +704,40 @@
       });
     </script>
     <script src="../script.js"></script>
+    <!-- mobile-toast -->
+    <div class="popup-toast" id="popupToast">
+      <div class="popup-content">
+        <i class="fab fa-whatsapp"></i>
+        <span>Need an appointment?</span>
+        <a
+          href="https://wa.me/917097890007?text=Hi%20there!%20I%27m%20interested%20in%20dental%20services"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="popup-book-now"
+        >
+          Book Now
+        </a>
+      </div>
+      <!-- Close button -->
+      <button type="button" class="popup-close" aria-label="Close toast">
+        &times;
+      </button>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        const toast = document.getElementById("popupToast");
+        const close = toast.querySelector(".popup-close");
+
+        // Show after 4 seconds
+        setTimeout(() => {
+          toast.classList.add("show");
+        }, 4000);
+
+        // Hide on close click
+        close.addEventListener("click", () => {
+          toast.classList.remove("show");
+        });
+      });
+    </script>
   </body>
 </html>
