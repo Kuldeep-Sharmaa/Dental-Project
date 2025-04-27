@@ -271,7 +271,7 @@ body {
 }
 /* what we do section */
 #what-we-do {
-  background-image: url("../images/wedo.jpg");
+  background-image: url("../images/wedo.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -440,7 +440,7 @@ body {
 
 /* smooth service section */
 #smoooth-service {
-  background-image: url("../images/smooth.jpg");
+  background-image: url("../images/smooth.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -452,7 +452,7 @@ body {
 
 /* make it habit section */
 #habit {
-  background-image: url("../images/habit.jpg");
+  background-image: url("../images/habit.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -517,7 +517,7 @@ body {
   letter-spacing: 0.5px;
 }
 #smile {
-  background-image: url("../images/smile.jpg");
+  background-image: url("../images/smile.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -558,7 +558,7 @@ body {
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: 0.3s ease-in-out;
-  height: 360px; /* Adjust as needed */
+  height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -588,13 +588,13 @@ body {
 }
 
 .google-badge {
-  width: 28px;
-  height: 28px;
+  width: 40px;
+  height: 40px;
   background: white;
   border-radius: 50%;
   position: absolute;
   bottom: 0;
-  right: calc(50% - 14px);
+  right: calc(50% - 20px);
   transform: translateY(50%);
   padding: 4px;
   z-index: 2;

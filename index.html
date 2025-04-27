@@ -172,9 +172,14 @@
             data-aos-duration="1200"
           >
             <div class="shape-2">
-              <img src="images/Shape-2.png" alt="" />
+              <img src="images/Shape-2.png" decoding="async" alt=" Shape 2" />
             </div>
-            <img src="images/Image.png" alt="hero image" class="img-fluid" />
+            <img
+              src="images/Image.webp"
+              alt="Hero image"
+              class="img-fluid"
+              decoding="async"
+            />
           </div>
           <div
             class="col-md-6 hero-text"
@@ -317,8 +322,10 @@
           <div class="col-lg-5 mb-4 mb-lg-0" data-aos="zoom-in">
             <div class="doctor-img-container">
               <img
-                src="images/assets/Dr_image.jpg"
+                src="images/assets/Dr_image.webp"
                 alt="Dr. Ishupreet Singh"
+                decoding="async"
+                loading="lazy"
                 class="img-fluid"
               />
             </div>
@@ -909,7 +916,6 @@
         </div>
       </div>
     </section>
-
     <!-- Smile Hero Section -->
     <section
       id="smile"
@@ -1090,15 +1096,6 @@
 
         observer.observe(section);
 
-        /**
-         * Smoothly animate a number from start → end over duration.
-         * @param {string} id         – element ID
-         * @param {number} start      – start value
-         * @param {number} end        – end value
-         * @param {number} duration   – ms duration
-         * @param {string} suffix     – text suffix (e.g. '%', '+')
-         * @param {boolean} commas    – whether to add thousands separators
-         */
         function animateCount(
           id,
           start,
@@ -1153,7 +1150,7 @@
           clickable: true,
         },
         autoplay: {
-          delay: 3000, // 4 seconds
+          delay: 3000, // 3 seconds
           disableOnInteraction: true,
         },
         breakpoints: {
