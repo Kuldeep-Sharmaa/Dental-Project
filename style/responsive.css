@@ -20,6 +20,9 @@
   .hero-text {
     text-align: center;
   }
+  .masonry-grid {
+    column-count: 2;
+  }
   .hero-heading {
     font-size: var(--heading-size);
   }
