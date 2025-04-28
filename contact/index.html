@@ -142,19 +142,17 @@
       </div>
     </header>
     <main>
-      <div class="contact-header">
-        <div class="container">
-          <h1 class="heading">Contact Us</h1>
-          <p class="mt-3 fs-4">
-            We'd love to hear from you Please reach out with any questions or to
-            schedule an appointment.
+      <div class="contact-section">
+        <h1 class="contact-heading">Contact Us</h1>
+        <p class="contact-text">
+          We'd love to hear from you. Please reach out with any questions or to
+          schedule an appointment.
+        </p>
+        <div class="trust-badge text-center mt-4">
+          <p class="small text-muted">
+            ⭐ Trusted by <strong>00+ happy patients</strong> <br />
+            🏥 Serving smiles for <strong>10+ years</strong>
           </p>
-          <div class="trust-badge text-center mt-4">
-            <p class="small text-muted">
-              ⭐ Trusted by <strong>1000+ happy patients</strong> <br />
-              🏥 Serving smiles for <strong>10+ years</strong>
-            </p>
-          </div>
         </div>
       </div>
 
@@ -170,9 +168,9 @@
             <div class="contact-form">
               <form>
                 <div class="mb-3">
-                  <label for="name" class="form-label"
-                    >Your Full Name<span class="text-danger">*</span></label
-                  >
+                  <label for="name" class="form-label">
+                    Your Full Name<span class="text-danger">*</span>
+                  </label>
                   <input
                     type="text"
                     class="form-control"
@@ -183,9 +181,9 @@
                 </div>
 
                 <div class="mb-3">
-                  <label for="email" class="form-label"
-                    >Email Address<span class="text-danger">*</span></label
-                  >
+                  <label for="email" class="form-label">
+                    Email Address<span class="text-danger">*</span>
+                  </label>
                   <input
                     type="email"
                     class="form-control"
@@ -196,9 +194,9 @@
                 </div>
 
                 <div class="mb-3">
-                  <label for="phone" class="form-label"
-                    >Phone Number<span class="text-danger">*</span></label
-                  >
+                  <label for="phone" class="form-label">
+                    Phone Number<span class="text-danger">*</span>
+                  </label>
                   <input
                     type="tel"
                     class="form-control"
@@ -208,12 +206,42 @@
                   />
                 </div>
 
+                <!-- Looking For Field -->
                 <div class="mb-3">
-                  <label for="message" class="form-label"
-                    >How can we help you?<span class="text-danger"
-                      >*</span
-                    ></label
+                  <label for="lookingFor" class="form-label">
+                    Looking for<span class="text-danger">*</span>
+                  </label>
+                  <select
+                    id="lookingFor"
+                    name="lookingFor"
+                    class="form-control"
+                    required
                   >
+                    <option value="">-- Please select a service --</option>
+                    <option>
+                      Brackets & Braces (tooth-coloured and metal)
+                    </option>
+                    <option>Rotary-assisted root canal treatment</option>
+                    <option>Painless tooth extractions</option>
+                    <option>Crown, bridge & denture work</option>
+                    <option>Laser-assisted surgeries</option>
+                    <option>Smile designing</option>
+                    <option>Aesthetic (cosmetic) restorations</option>
+                    <option>Laser teeth whitening</option>
+                    <option>Child (pediatric) dentistry</option>
+                    <option>Dental jewellery</option>
+                    <option>Dental implants</option>
+                    <option>Anti-snoring devices</option>
+                    <option>TMJ (jaw joint) therapy</option>
+                    <option>Gum disease treatment</option>
+                    <option>Neuromuscular dentistry</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="message" class="form-label">
+                    How can we help you?<span class="text-danger">*</span>
+                  </label>
                   <textarea
                     class="form-control"
                     id="message"
@@ -242,7 +270,7 @@
               </p>
 
               <h5 class="mt-4">Phone</h5>
-              <p><a href="tel:+917097890007">+91-70978-90007</a></p>
+              <p><a href="tel:+917097890007">+91 7097890007</a></p>
 
               <h5 class="mt-4">Email</h5>
               <p>

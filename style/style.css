@@ -714,13 +714,25 @@ body {
 }
 
 /* contact page */
-.contact-header {
-  background-color: #5a66c5;
-  color: white;
-  padding: 60px 0;
-  padding-top: 9rem;
+
+.contact-section {
+  background: linear-gradient(rgba(92, 107, 192, 0.8), rgba(92, 107, 192, 0.8)),
+    url("../images/head-banner.jpg") center/cover no-repeat;
+  padding: 80px 0;
   text-align: center;
+  color: white;
+  padding-top: 9rem;
 }
+
+.contact-heading {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  font-size: 20px;
+}
+
 .contact-form {
   background-color: #ffffff;
   border-radius: 10px;
@@ -988,11 +1000,12 @@ iframe {
 
 /* service page */
 .service-hero-section {
-  background: linear-gradient(to right, #5a66c5, #6c73d1);
-  color: #fff;
-  padding-top: 140px;
-  padding-bottom: 50px;
+  background: linear-gradient(rgba(92, 107, 192, 0.8), rgba(92, 107, 192, 0.8)),
+    url("../images/head-banner.jpg") center/cover no-repeat;
+  padding: 80px 0;
   text-align: center;
+  color: white;
+  padding-top: 9rem;
 }
 .services {
   width: 100vw;
@@ -1104,4 +1117,37 @@ iframe {
   font-size: 14px;
   color: #6c757d;
   line-height: 1.5;
+}
+.call-now-button {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: #0d6efd; /* Blue */
+  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: floatBounce 2s infinite ease-in-out;
+}
+
+/* Icon style */
+.call-now-button i {
+  font-size: 20px;
+}
+
+/* Floating bounce animation */
+@keyframes floatBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
